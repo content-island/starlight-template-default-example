@@ -1,36 +1,60 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Content Island CLI
+description: A command-line tool to bootstrap projects from Content Island templates and sync them with your Content Island HCMS.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Effortlessly sync your Starlight documentation with Content Island CMS
   image:
-    file: ../../assets/houston.webp
+    file:  https://d2gr4gsp182xcm.cloudfront.net/lemoncode/prueba-starlight-connector/page/index/en/isotype-content-island.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Get Started
+      link: /guides/getting-started/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: More info about Content Island
+      link: https://contentisland.net/
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## What is Create Content Island?
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+Create Content Island is a powerful command-line tool designed to seamlessly integrate [Starlight](https://starlight.astro.build/) documentation sites with [Content Island CMS](https://content-island.com/). It automates the process of syncing content from your CMS to your documentation site, making it easy to maintain up-to-date documentation.
+
+<CardGrid>
+  <Card title="🚀 Quick Setup" icon="rocket">
+    Get started in minutes with automatic project validation and Content Island
+    integration.
+  </Card>
+  <Card title="🔄 Auto Sync" icon="refresh">
+    Keep your documentation in sync with your CMS content using simple commands.
+  </Card>
+  <Card title="🔐 Secure Tokens" icon="lock">
+    Automatic token management with secure local storage and gitignore
+    protection.
+  </Card>
+  <Card title="📁 Smart Structure" icon="folder">
+    Automatically organizes your content with dynamic sidebar generation.
+  </Card>
 </CardGrid>
+
+## Key Features
+
+- **Two-Command Workflow**: `init` for setup, `update` for regular syncing
+- **Automatic Token Management**: Securely stores and reuses API tokens
+- **Dynamic Sidebar Generation**: Automatically creates navigation from your content structure
+- **Content Validation**: Ensures your project is properly configured before syncing
+- **TypeScript Support**: Built with TypeScript for better developer experience
+
+## How It Works
+
+1. **Initialize**: Run `cistar init` in your Starlight project to set up Content Island integration
+2. **Configure**: Provide your Content Island API token (stored securely for future use)
+3. **Sync**: Use `cistar update` anytime to refresh your content from the CMS
+4. **Build**: Your documentation is ready to build and deploy with fresh content
+
+## Next Steps
+
+Ready to get started? Head over to the [Installation guide](/guides/getting-started/) to set up Cistar in your project.

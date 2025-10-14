@@ -9,18 +9,35 @@ export default defineConfig({
 			title: 'My Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
+  {
+    label: 'Guides',
+    items: [
+      {
+        label: 'Getting Started',
+        slug: 'guides/getting-started'
+      }
+    ]
+  },
+  {
+    label: 'Others',
+    items: [
+      {
+        label: 'Multilanguage',
+        slug: 'others/multilanguage'
+      },
+      {
+        label: 'Resources',
+        slug: 'others/resources'
+      }
+    ]
+  }
+],
+  locales: {
+  root: {
+    lang: 'en',
+    label: 'English'
+  }
+},
 		}),
 	],
 });
