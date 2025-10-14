@@ -1,49 +1,50 @@
-# Starlight Starter Kit: Basics
+# 🏝️ Content Island — Starlight Default Template
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+This repository contains the **default project** automatically generated when you create a **Starlight**-based project in [Content Island](https://contentisland.net/).
 
+It serves as a ready-to-use starting point for building documentation sites powered by **[Astro Starlight](https://starlight.astro.build/)**, already configured to work seamlessly with Content Island’s content management features.
+
+---
+
+## 🚀 Live Preview
+
+You can explore and preview this template directly on StackBlitz:
+
+👉 [Open in StackBlitz](https://stackblitz.com/github.com/content-island/starlight-template-default-example)
+
+---
+
+## 🧰 How to Run Locally
+
+To run this project on your local machine:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/content-island/starlight-template-default-example.git
+
+# 2. Move into the project folder
+cd starlight-template-default-example
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
 ```
-npm create astro@latest -- --template starlight
-```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Then open your browser and visit **http://localhost:4321** (or the URL shown in your terminal).
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## 📘 Learn More
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+For more information about Content Island templates and how they work, visit the official documentation:
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+🔗 [https://docs.contentisland.net/templates/overview/](https://docs.contentisland.net/templates/overview/)
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+---
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 🧩 About Content Island
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+[Content Island](https://contentisland.net/) is a **headless CMS** designed for modern static site workflows.  
+It integrates with frameworks like Astro, Next.js, and others — giving you a visual, structured way to manage your content while keeping full control of your codebase.
