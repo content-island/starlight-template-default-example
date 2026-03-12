@@ -4,40 +4,46 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
-			sidebar: [
-  {
-    label: 'Guides',
-    items: [
-      {
-        label: 'Getting Started',
-        slug: 'guides/getting-started'
-      }
-    ]
+  prefetch: true,
+  vite: {
+    optimizeDeps: {
+      exclude: ['astro/virtual-modules/prefetch.js'],
+    }
   },
-  {
-    label: 'Others',
-    items: [
-      {
-        label: 'Multilanguage',
-        slug: 'others/multilanguage'
+  integrations: [
+    starlight({
+      title: 'My Docs',
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+      sidebar: [
+        {
+          label: 'Guides',
+          items: [
+            {
+              label: 'Getting Started',
+              slug: 'guides/getting-started'
+            }
+          ]
+        },
+        {
+          label: 'Others',
+          items: [
+            {
+              label: 'Multilanguage',
+              slug: 'others/multilanguage'
+            },
+            {
+              label: 'Resources',
+              slug: 'others/resources'
+            }
+          ]
+        }
+      ],
+      locales: {
+        root: {
+          lang: 'en',
+          label: 'English'
+        }
       },
-      {
-        label: 'Resources',
-        slug: 'others/resources'
-      }
-    ]
-  }
-],
-  locales: {
-  root: {
-    lang: 'en',
-    label: 'English'
-  }
-},
-		}),
-	],
+    }),
+  ],
 });
